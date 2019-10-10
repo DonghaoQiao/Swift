@@ -1,0 +1,349 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		069E0F5D2316BB0300B5E799 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E0F5C2316BB0300B5E799 /* AppDelegate.swift */; };
+		069E0F5F2316BB0300B5E799 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E0F5E2316BB0300B5E799 /* ViewController.swift */; };
+		069E0F622316BB0300B5E799 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 069E0F602316BB0300B5E799 /* Main.storyboard */; };
+		069E0F642316BB0400B5E799 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 069E0F632316BB0400B5E799 /* Assets.xcassets */; };
+		069E0F672316BB0400B5E799 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 069E0F652316BB0400B5E799 /* LaunchScreen.storyboard */; };
+		069E0F6F2316BBFE00B5E799 /* mnistCNN.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 069E0F6E2316BBFE00B5E799 /* mnistCNN.mlmodel */; };
+		069E0F712316BCAD00B5E799 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E0F702316BCAD00B5E799 /* DrawView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		069E0F592316BB0300B5E799 /* MNISTHandwrittingRecognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MNISTHandwrittingRecognition.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		069E0F5C2316BB0300B5E799 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		069E0F5E2316BB0300B5E799 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		069E0F612316BB0300B5E799 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		069E0F632316BB0400B5E799 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		069E0F662316BB0400B5E799 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		069E0F682316BB0400B5E799 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		069E0F6E2316BBFE00B5E799 /* mnistCNN.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = mnistCNN.mlmodel; sourceTree = "<group>"; };
+		069E0F702316BCAD00B5E799 /* DrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		069E0F562316BB0300B5E799 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		069E0F502316BB0300B5E799 = {
+			isa = PBXGroup;
+			children = (
+				069E0F5B2316BB0300B5E799 /* MNISTHandwrittingRecognition */,
+				069E0F5A2316BB0300B5E799 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		069E0F5A2316BB0300B5E799 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				069E0F592316BB0300B5E799 /* MNISTHandwrittingRecognition.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		069E0F5B2316BB0300B5E799 /* MNISTHandwrittingRecognition */ = {
+			isa = PBXGroup;
+			children = (
+				069E0F5C2316BB0300B5E799 /* AppDelegate.swift */,
+				069E0F5E2316BB0300B5E799 /* ViewController.swift */,
+				069E0F702316BCAD00B5E799 /* DrawView.swift */,
+				069E0F602316BB0300B5E799 /* Main.storyboard */,
+				069E0F6E2316BBFE00B5E799 /* mnistCNN.mlmodel */,
+				069E0F632316BB0400B5E799 /* Assets.xcassets */,
+				069E0F652316BB0400B5E799 /* LaunchScreen.storyboard */,
+				069E0F682316BB0400B5E799 /* Info.plist */,
+			);
+			path = MNISTHandwrittingRecognition;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		069E0F582316BB0300B5E799 /* MNISTHandwrittingRecognition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 069E0F6B2316BB0400B5E799 /* Build configuration list for PBXNativeTarget "MNISTHandwrittingRecognition" */;
+			buildPhases = (
+				069E0F552316BB0300B5E799 /* Sources */,
+				069E0F562316BB0300B5E799 /* Frameworks */,
+				069E0F572316BB0300B5E799 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MNISTHandwrittingRecognition;
+			productName = MNISTHandwrittingRecognition;
+			productReference = 069E0F592316BB0300B5E799 /* MNISTHandwrittingRecognition.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		069E0F512316BB0300B5E799 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Jeremy Qiao";
+				TargetAttributes = {
+					069E0F582316BB0300B5E799 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 069E0F542316BB0300B5E799 /* Build configuration list for PBXProject "MNISTHandwrittingRecognition" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 069E0F502316BB0300B5E799;
+			productRefGroup = 069E0F5A2316BB0300B5E799 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				069E0F582316BB0300B5E799 /* MNISTHandwrittingRecognition */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		069E0F572316BB0300B5E799 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				069E0F672316BB0400B5E799 /* LaunchScreen.storyboard in Resources */,
+				069E0F642316BB0400B5E799 /* Assets.xcassets in Resources */,
+				069E0F622316BB0300B5E799 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		069E0F552316BB0300B5E799 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				069E0F5F2316BB0300B5E799 /* ViewController.swift in Sources */,
+				069E0F6F2316BBFE00B5E799 /* mnistCNN.mlmodel in Sources */,
+				069E0F712316BCAD00B5E799 /* DrawView.swift in Sources */,
+				069E0F5D2316BB0300B5E799 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		069E0F602316BB0300B5E799 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				069E0F612316BB0300B5E799 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		069E0F652316BB0400B5E799 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				069E0F662316BB0400B5E799 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		069E0F692316BB0400B5E799 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		069E0F6A2316BB0400B5E799 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		069E0F6C2316BB0400B5E799 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 65GM8FKAYM;
+				INFOPLIST_FILE = MNISTHandwrittingRecognition/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeremyqiao.MNISTHandwrittingRecognition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		069E0F6D2316BB0400B5E799 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 65GM8FKAYM;
+				INFOPLIST_FILE = MNISTHandwrittingRecognition/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeremyqiao.MNISTHandwrittingRecognition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		069E0F542316BB0300B5E799 /* Build configuration list for PBXProject "MNISTHandwrittingRecognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				069E0F692316BB0400B5E799 /* Debug */,
+				069E0F6A2316BB0400B5E799 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		069E0F6B2316BB0400B5E799 /* Build configuration list for PBXNativeTarget "MNISTHandwrittingRecognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				069E0F6C2316BB0400B5E799 /* Debug */,
+				069E0F6D2316BB0400B5E799 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 069E0F512316BB0300B5E799 /* Project object */;
+}
